@@ -59,10 +59,10 @@ function showImage() {
   futureEl.insertAdjacentElement('beforeend', img);
 
   const prevPos = document.querySelector('[data-id="previous-position"]');
-  prevPos.innerHTML = `Previous position: ${prevPosToDisplay}`;
+  prevPos.textContent = `Previous position: ${prevPosToDisplay}`;
 
   const curPos = document.querySelector('[data-id="current-position"]');
-  curPos.innerHTML = `Current position: ${position + 1}`;
+  curPos.textContent = `Current position: ${position + 1}`;
 
   currentPosition = position;
 }
